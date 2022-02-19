@@ -16,7 +16,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT;
 const publicDir = path.join(__dirname, "../public");
 
 app.use(express.json());
